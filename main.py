@@ -1,17 +1,15 @@
 from moviepy.editor import *
-   
-def in_outro():
-    inoutro=
 
-def split_file(original_file):
+INTRO=""
+OUTRO=""
+
+def Merge_Files(original_file):
     if file is not None:
         clip = VideoFileClip(original_file)
-
-    final_clip=moviepy.editor.concatenate_videoclips([inoutro,clip1,inoutro])
-    final_clip.write_videofile("output_1.mp4", codec='libx264')
-
-def editfile():
-    in_outro()
-  
+        final_clip=moviepy.editor.concatenate_videoclips([INTRO,clip1,OUTRO])
+        final_clip.write_videofile("output_1.mp4", codec='libx264')
+    else:
+        print("No file")
+        
 if __name__ == "__main__":
-    editfile()
+    Merge_Files("input.mp4")
