@@ -1,3 +1,4 @@
+'''This is the main file that will be executed by the user.'''
 from sys import argv
 from moviepy.editor import *
 
